@@ -15,182 +15,703 @@
     <link rel="stylesheet" href="./assets/css/output.css" />
     <title>IRL Studios</title>
   </head>
-  <body style="min-height: 4295px">
+  <body class="overflow-x-hidden">
     <!-- hero -->
-    <div
-      id="bg-main"
-      class="h-screen w-screen bg-black flex justify-center items-center fixed"
-    >
-      <img
-        id="logo"
-        src="./assets/images/logo.gif"
-        class="h-4/5 object-contain"
-      />
+    <div class="h-screen w-screen bg-black bg-center bg-no-repeat" style="background-image: url('./assets/images/logo.gif'); background-size: 40%; background-attachment: fixed;">
     </div>
-    <div id="bg-black" class="h-screen w-screen bg-black fixed"></div>
-    <div id="bg-white" class="h-screen w-screen bg-white fixed"></div>
     <!-- end: hero -->
 
-    <!-- main -->
-    <section class="px-7 pt-24">
-      <!-- who we are -->
-      <h4 id="about-us" class="text-4xl mb-12 text-white fixed">about us</h4>
-      <h1
-        id="about-us-1"
-        class="text-4xl md:text-7xl text-white font-black fixed top-40"
-      >
+    <!-- who we are -->
+    <section class="px-7 py-24 h-screen bg-black flex flex-col">
+      <h4 id="about-us" class="text-4xl mb-12 text-white">about us</h4>
+      <h1 id="about-us-1" class="text-4xl md:text-7xl text-white font-black">
         IRL studios is a team of seasoned
       </h1>
-      <h1
-        id="about-us-2"
-        class="text-4xl md:text-7xl text-white font-black fixed top-60 md:top-56"
-      >
+      <h1 id="about-us-2" class="text-4xl md:text-7xl text-white font-black">
         crypto, web3, and real world art & industry executives building brands
       </h1>
-      <h1
-        id="about-us-3"
-        class="text-4xl md:text-7xl text-white font-black fixed top-[25rem] md:top-96"
-      >
+      <h1 id="about-us-3" class="text-4xl md:text-7xl text-white font-black">
         that live both on the blockchain and in real life (IRL)
       </h1>
-      <!-- end: who we are -->
-      <!-- mission -->
-      <h4 id="mission" class="text-4xl mb-12 fixed">mission</h4>
-      <h1 id="mission-1" class="text-4xl font-bold fixed top-40">
+    </section>
+    <!-- end: who we are -->
+    <!-- mission -->
+    <section class="px-7 py-24 bg-white flex flex-col">
+      <h4 id="mission" class="text-4xl mb-12">mission</h4>
+      <h1 id="mission-1" class="text-4xl font-bold">
         Find the spark & turn into a blazing fire!
       </h1>
-      <h1 id="mission-2" class="text-4xl font-bold fixed top-72 md:top-52">
+      <h1 id="mission-2" class="text-4xl font-bold">
         Our mission is to find and bring to our audiences incredible, rare and
         talented digital artists
       </h1>
-      <h1
-        id="mission-3"
-        class="text-4xl font-bold fixed top-[33rem] md:top-[19.5rem]"
-      >
+      <h1 id="mission-3" class="text-4xl font-bold">
         and grow them into 360° brands spanning both Web3 and real life.
       </h1>
-      <!-- end: mission -->
-      <!-- our collections -->
-      <h4 id="collections" class="text-4xl text-white fixed top-80">
+    </section>
+    <!-- end: mission -->
+    <!-- our collections -->
+    <section class="px-7 py-24 h-screen bg-black flex flex-col justify-center">
+      <h4 id="collections" class="text-4xl text-white mb-12">
         our collections
       </h4>
-      <h1 id="collections-1" class="text-4xl text-white font-bold fixed top-96">
+      <h1 id="collections-1" class="text-4xl text-white font-bold">
         To be announced
       </h1>
-      <!-- end: our collections -->
-      <!-- contact -->
-      <div id="contact" class="fixed top-0">
-        <div
-          class="bg-white h-screen w-screen px-5 -ml-7 flex flex-col justify-between items-center gap-10"
-        >
-          <span>&nbsp;</span>
-          <div class="flex flex-col justify-between items-center gap-10">
-            <h1 class="text-4xl text-center">
-              WANT TO WORK WITH US OR LEARN MORE?
-            </h1>
-            <a
-              href="mailto:hello@irlstudios.xyz"
-              class="h-14 px-6 font-semibold rounded-full bg-black border border-transparent text-white flex items-center hover:bg-white hover:border hover:border-black hover:text-black"
-              >Partner with IRL</a
-            >
-          </div>
-          <!-- social  -->
-          <div class="flex justify-center gap-5 mb-10">
-            <a
-              href="#"
-              class="h-9 w-9 font-semibold rounded-full bg-my_blue text-white flex items-center justify-center hover:bg-my_pink"
-              ><i class="bi bi-twitter"></i
-            ></a>
-            <a
-              href="#"
-              class="h-9 w-9 font-semibold rounded-full bg-my_purple text-white flex items-center justify-center hover:bg-my_yellow"
-              ><i class="bi bi-tiktok"></i
-            ></a>
-            <a
-              href="#"
-              class="h-9 w-9 font-semibold rounded-full bg-my_orange text-white flex items-center justify-center hover:bg-my_pink"
-              ><i class="bi bi-instagram"></i
-            ></a>
-          </div>
-          <!-- end: social  -->
-        </div>
-      </div>
-      <!-- end: contact -->
     </section>
-    <!-- end: main -->
+    <!-- end: our collections -->
+    <!-- contact -->
+    <div
+      class="bg-white h-screen px-5 flex flex-col justify-between items-center gap-10"
+    >
+      <span>&nbsp;</span>
+      <div class="flex flex-col justify-between items-center gap-10">
+        <h1 class="text-4xl text-center">
+          WANT TO WORK WITH US OR LEARN MORE?
+        </h1>
+        <a
+          href="mailto:hello@irlstudios.xyz"
+          class="h-14 px-6 font-semibold rounded-full bg-black border border-transparent text-white flex items-center hover:bg-white hover:border hover:border-black hover:text-black"
+          >Partner with IRL</a
+        >
+      </div>
+      <!-- social  -->
+      <div class="flex justify-center gap-5 mb-10">
+        <a
+          href="#"
+          class="h-9 w-9 font-semibold rounded-full bg-my_blue text-white flex items-center justify-center hover:bg-my_pink"
+          ><i class="bi bi-twitter"></i
+        ></a>
+        <a
+          href="#"
+          class="h-9 w-9 font-semibold rounded-full bg-my_purple text-white flex items-center justify-center hover:bg-my_yellow"
+          ><i class="bi bi-tiktok"></i
+        ></a>
+        <a
+          href="#"
+          class="h-9 w-9 font-semibold rounded-full bg-my_orange text-white flex items-center justify-center hover:bg-my_pink"
+          ><i class="bi bi-instagram"></i
+        ></a>
+      </div>
+      <!-- end: social  -->
+    </div>
+    <!-- end: contact -->
+
+    <!-- <div class="staggering-grid-demo h-screen flex flex-col">
+      <div class="flex-1 flex">
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+      </div>
+      <div class="flex-1 flex">
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+      </div>
+      <div class="flex-1 flex">
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+      </div>
+      <div class="flex-1 flex">
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+      </div>
+      <div class="flex-1 flex">
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+      </div>
+      <div class="flex-1 flex">
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+      </div>
+      <div class="flex-1 flex">
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+      </div>
+      <div class="flex-1 flex">
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+      </div>
+      <div class="flex-1 flex">
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+      </div>
+      <div class="flex-1 flex">
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+      </div>
+      <div class="flex-1 flex">
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+      </div>
+      <div class="flex-1 flex">
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+      </div>
+      <div class="flex-1 flex">
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+      </div>
+      <div class="flex-1 flex">
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+      </div>
+      <div class="flex-1 flex">
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+      </div>
+      <div class="flex-1 flex">
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+        <div class="flex-1 h-100 bg-black  el"></div>
+      </div>
+    </div> -->
 
     <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script>
-      window.scrollTo(0, 0)
+      anime({
+        targets: '.staggering-grid-demo .el',
+        loop: true,
+        scale: [
+          {value: .1, easing: 'easeOutSine', duration: 500},
+          {value: 1, easing: 'easeInOutQuad', duration: 1200}
+        ],
+        borderRadius: function() { return ['0%', anime.random(5, 50) + '%']; },
+        delay: anime.stagger(200, {grid: [33, 16], from: 'center'})
+      });
+    </script>
+    <script>
+      window.scrollTo(0, 0);
       window.onload = function () {
         lax.init();
 
         lax.addDriver("scrollY", function () {
-          return document.documentElement.scrollTop;
-        });
-
-        lax.addElements("#bg-main #logo", {
-          scrollY: {
-            opacity: [
-              [0, 900],
-              [1, 0],
-            ],
-          },
-        });
-        lax.addElements("#bg-white", {
-          scrollY: {
-            opacity: [
-              [0, 1100, 1200, 2100, 2200],
-              [0, 0, 1, 1, 0],
-            ],
-            translateY: [
-              [2700, 2900],
-              [0, "-screenHeight"],
-            ],
-          },
-        });
-        lax.addElements("#bg-black", {
-          scrollY: {
-            opacity: [
-              [0, 2100, 2200],
-              [0, 0, 1],
-            ],
-          },
+          return window.scrollY;
         });
 
         lax.addElements("#about-us", {
           scrollY: {
             opacity: [
-              [0, 300],
+              ["elInY", "elCenterY"],
               [0, 1],
-            ],
-            translateY: [
-              [1100, 1300],
-              [0, "-screenHeight"],
             ],
           },
         });
         lax.addElements("#about-us-1", {
           scrollY: {
             translateY: [
-              [300, 500, 1100, 1300],
-              ["screenHeight", 0, 0, "-screenHeight"],
+              ["elInY", "elCenterY"],
+              ["screenHeight", 0],
             ],
           },
         });
         lax.addElements("#about-us-2", {
           scrollY: {
             translateY: [
-              [500, 700, 1100, 1300],
-              ["screenHeight", 0, 0, "-screenHeight"],
+              ["elInY", "elCenterY"],
+              ["screenHeight", 0],
             ],
           },
         });
         lax.addElements("#about-us-3", {
           scrollY: {
             translateY: [
-              [700, 900, 1100, 1300],
-              ["screenHeight", 0, 0, "-screenHeight"],
+              ["elInY", "elCenterY"],
+              ["screenHeight", 0],
             ],
           },
         });
@@ -198,36 +719,32 @@
         lax.addElements("#mission", {
           scrollY: {
             opacity: [
-              [1200, 1300],
+              ["elInY", "elCenterY"],
               [0, 1],
-            ],
-            translateY: [
-              [2100, 2300],
-              [0, "-screenHeight"],
             ],
           },
         });
         lax.addElements("#mission-1", {
           scrollY: {
             translateY: [
-              [1300, 1500, 2100, 2300],
-              ["screenHeight", 0, 0, "-screenHeight"],
+              ["elInY", "elCenterY"],
+              ["screenHeight", 0],
             ],
           },
         });
         lax.addElements("#mission-2", {
           scrollY: {
             translateY: [
-              [1500, 1700, 2100, 2300],
-              ["screenHeight", 0, 0, "-screenHeight"],
+              ["elInY", "elCenterY"],
+              ["screenHeight", 0],
             ],
           },
         });
         lax.addElements("#mission-3", {
           scrollY: {
             translateY: [
-              [1700, 1900, 2100, 2300],
-              ["screenHeight", 0, 0, "-screenHeight"],
+              ["elInY", "elCenterY"],
+              ["screenHeight", 0],
             ],
           },
         });
@@ -235,7 +752,7 @@
         lax.addElements("#collections", {
           scrollY: {
             translateX: [
-              [2200, 2300],
+              ["elInY", "elCenterY"],
               ["screenWidth", 0],
             ],
           },
@@ -243,7 +760,7 @@
         lax.addElements("#collections-1", {
           scrollY: {
             translateX: [
-              [2300, 2500],
+              ["elInY", "elCenterY"],
               ["screenWidth", 0],
             ],
           },
