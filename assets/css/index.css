@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'arial';
+  src: url('../fonts/unicode.arialr.ttf');
+}
+
 @layer base {
     html {
-      font-family: Inter;
+      font-family: arial;
     }
   }

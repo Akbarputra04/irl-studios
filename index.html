@@ -5,57 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="./assets/css/output.css" />
     <title>IRL Studios</title>
-  </head>
+  <script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
   <body class="overflow-x-hidden">
     <!-- hero -->
-    <div class="h-screen w-screen bg-black bg-center bg-no-repeat" style="background-image: url('./assets/images/logo.gif'); background-size: 40%; background-attachment: fixed;">
+    <div class="h-screen bg-black flex justify-center items-center">
+      <canvas id="canvas" class="w-screen h-screen"></canvas>
+      <img
+        id="logo"
+        src="./assets/images/logo.gif"
+        alt="logo"
+        class="h-4/5 object-contain fixed z-10 hidden md:block"
+      />
+      <img
+        id="logo-black"
+        src="./assets/images/logo-black.gif"
+        alt="logo"
+        class="h-4/5 object-contain fixed z-10 hidden md:block"
+      />
+
+      <img
+        id="logo-mobile"
+        src="./assets/images/logo.gif"
+        alt="logo"
+        class="h-4/5 object-contain fixed z-10 block md:hidden"
+      />
+      <img
+        id="logo-black-mobile"
+        src="./assets/images/logo-black.gif"
+        alt="logo"
+        class="h-4/5 object-contain fixed z-10 block md:hidden"
+      />
     </div>
     <!-- end: hero -->
 
     <!-- who we are -->
     <section class="px-7 py-24 h-screen bg-black flex flex-col">
-      <h4 id="about-us" class="text-4xl mb-12 text-white">about us</h4>
-      <h1 id="about-us-1" class="text-4xl md:text-7xl text-white font-black">
+      <h4 id="about-us" class="text-4xl mb-12 text-white underline decoration-my_pink">about us</h4>
+      <h1 id="about-us-1" class="text-4xl md:text-7xl text-white font-bold tracking-wide">
         IRL studios is a team of seasoned
       </h1>
-      <h1 id="about-us-2" class="text-4xl md:text-7xl text-white font-black">
-        crypto, web3, and real world art & industry executives building brands
+      <h1 id="about-us-2" class="text-4xl md:text-7xl text-white font-bold tracking-wide">
+        <span class="underline decoration-my_yellow">crypto</span>, <span class="underline decoration-my_orange">web3</span>, and <span class="underline decoration-my_blue">real world art & industry</span> executives building brands
       </h1>
-      <h1 id="about-us-3" class="text-4xl md:text-7xl text-white font-black">
+      <h1 id="about-us-3" class="text-4xl md:text-7xl text-white font-bold tracking-wide">
         that live both on the blockchain and in real life (IRL)
       </h1>
     </section>
     <!-- end: who we are -->
     <!-- mission -->
-    <section class="px-7 py-24 bg-white flex flex-col">
-      <h4 id="mission" class="text-4xl mb-12">mission</h4>
-      <h1 id="mission-1" class="text-4xl font-bold">
+    <section class="px-7 py-24 h-screen bg-white flex flex-col">
+      <h4 id="mission" class="text-4xl mb-12 underline decoration-my_purple">mission</h4>
+      <h1 id="mission-1" class="text-4xl md:text-7xl font-bold">
         Find the spark & turn into a blazing fire!
       </h1>
-      <h1 id="mission-2" class="text-4xl font-bold">
-        Our mission is to find and bring to our audiences incredible, rare and
-        talented digital artists
+      <h1 id="mission-2" class="text-4xl md:text-7xl font-bold">
+        Our mission is to find and bring to our audiences <span class="underline decoration-my_pink">incredible</span>, <span class="underline decoration-my_yellow">rare</span> and
+        <span class="underline decoration-my_orange">talented</span> digital artists
       </h1>
-      <h1 id="mission-3" class="text-4xl font-bold">
+      <h1 id="mission-3" class="text-4xl md:text-7xl font-bold">
         and grow them into 360° brands spanning both Web3 and real life.
       </h1>
     </section>
     <!-- end: mission -->
     <!-- our collections -->
     <section class="px-7 py-24 h-screen bg-black flex flex-col justify-center">
-      <h4 id="collections" class="text-4xl text-white mb-12">
+      <h4 id="collections" class="text-4xl text-white text-center mb-12 underline decoration-my_blue">
         our collections
       </h4>
-      <h1 id="collections-1" class="text-4xl text-white font-bold">
+      <h1
+        id="collections-1"
+        class="text-4xl text-white text-center font-bold"
+      >
         To be announced
       </h1>
     </section>
@@ -64,14 +89,14 @@
     <div
       class="bg-white h-screen px-5 flex flex-col justify-between items-center gap-10"
     >
-      <span>&nbsp;</span>
+      <span></span>
       <div class="flex flex-col justify-between items-center gap-10">
-        <h1 class="text-4xl text-center">
+        <h1 class="text-4xl md:text-5xl text-center font-bold tracking-wider">
           WANT TO WORK WITH US OR LEARN MORE?
         </h1>
         <a
           href="mailto:hello@irlstudios.xyz"
-          class="h-14 px-6 font-semibold rounded-full bg-black border border-transparent text-white flex items-center hover:bg-white hover:border hover:border-black hover:text-black"
+          class="h-14 px-6 font-semibold rounded-full bg-black border border-transparent text-white tracking-wider flex items-center hover:bg-white hover:border hover:border-black hover:text-black"
           >Partner with IRL</a
         >
       </div>
@@ -79,608 +104,115 @@
       <div class="flex justify-center gap-5 mb-10">
         <a
           href="#"
-          class="h-9 w-9 font-semibold rounded-full bg-my_blue text-white flex items-center justify-center hover:bg-my_pink"
-          ><i class="bi bi-twitter"></i
+          class="h-12 w-12 font-semibold rounded-full bg-my_blue text-white flex items-center justify-center hover:bg-my_pink"
+          ><i class="bi bi-twitter text-lg"></i
         ></a>
         <a
           href="#"
-          class="h-9 w-9 font-semibold rounded-full bg-my_purple text-white flex items-center justify-center hover:bg-my_yellow"
-          ><i class="bi bi-tiktok"></i
+          class="h-12 w-12 font-semibold rounded-full bg-my_purple text-white flex items-center justify-center hover:bg-my_yellow"
+          ><i class="bi bi-tiktok text-lg"></i
         ></a>
         <a
           href="#"
-          class="h-9 w-9 font-semibold rounded-full bg-my_orange text-white flex items-center justify-center hover:bg-my_pink"
-          ><i class="bi bi-instagram"></i
+          class="h-12 w-12 font-semibold rounded-full bg-my_orange text-white flex items-center justify-center hover:bg-my_pink"
+          ><i class="bi bi-instagram text-lg"></i
         ></a>
       </div>
       <!-- end: social  -->
     </div>
     <!-- end: contact -->
 
-    <!-- <div class="staggering-grid-demo h-screen flex flex-col">
-      <div class="flex-1 flex">
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-      </div>
-      <div class="flex-1 flex">
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-      </div>
-      <div class="flex-1 flex">
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-      </div>
-      <div class="flex-1 flex">
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-      </div>
-      <div class="flex-1 flex">
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-      </div>
-      <div class="flex-1 flex">
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-      </div>
-      <div class="flex-1 flex">
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-      </div>
-      <div class="flex-1 flex">
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-      </div>
-      <div class="flex-1 flex">
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-      </div>
-      <div class="flex-1 flex">
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-      </div>
-      <div class="flex-1 flex">
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-      </div>
-      <div class="flex-1 flex">
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-      </div>
-      <div class="flex-1 flex">
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-      </div>
-      <div class="flex-1 flex">
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-      </div>
-      <div class="flex-1 flex">
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-      </div>
-      <div class="flex-1 flex">
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-        <div class="flex-1 h-100 bg-black  el"></div>
-      </div>
-    </div> -->
-
     <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <script>
-      anime({
-        targets: '.staggering-grid-demo .el',
-        loop: true,
-        scale: [
-          {value: .1, easing: 'easeOutSine', duration: 500},
-          {value: 1, easing: 'easeInOutQuad', duration: 1200}
-        ],
-        borderRadius: function() { return ['0%', anime.random(5, 50) + '%']; },
-        delay: anime.stagger(200, {grid: [33, 16], from: 'center'})
-      });
-    </script>
     <script>
       window.scrollTo(0, 0);
+
       window.onload = function () {
         lax.init();
 
         lax.addDriver("scrollY", function () {
           return window.scrollY;
+        });
+
+        lax.addElements("#logo", {
+          scrollY: {
+            translateX: [
+              [0, 700],
+              [0, "screenWidth/2.4"],
+            ],
+            translateY: [
+              [0, 700],
+              [0, 300],
+            ],
+            scale: [
+              [0, 700],
+              [1, 0.5],
+            ],
+            opacity: [
+              [0, 800, 850, 1600, 1650, 2400, 2450],
+              [1, 1, 0, 0, 1, 1, 0],
+            ],
+          },
+        });
+        lax.addElements("#logo-black", {
+          scrollY: {
+            translateX: [
+              [0, 700],
+              [0, "screenWidth/2.4"],
+            ],
+            translateY: [
+              [0, 700],
+              [0, 300],
+            ],
+            scale: [
+              [0, 700],
+              [1, 0.5],
+            ],
+            opacity: [
+              [0, 800, 850, 1600, 1650, 2400, 2450],
+              [0, 0, 1, 1, 0, 0, 1],
+            ],
+          },
+        });
+
+        lax.addElements("#logo-mobile", {
+          scrollY: {
+            translateX: [
+              [0, 700],
+              [0, "screenWidth/3"],
+            ],
+            translateY: [
+              [0, 700],
+              [0, 300],
+            ],
+            scale: [
+              [0, 700],
+              [1, 0.5],
+            ],
+            opacity: [
+              [0, 800, 850, 1600, 1650, 2400, 2450],
+              [1, 1, 0, 0, 1, 1, 0],
+            ],
+          },
+        });
+        lax.addElements("#logo-black-mobile", {
+          scrollY: {
+            translateX: [
+              [0, 700],
+              [0, "screenWidth/3"],
+            ],
+            translateY: [
+              [0, 700],
+              [0, 300],
+            ],
+            scale: [
+              [0, 700],
+              [1, 0.5],
+            ],
+            opacity: [
+              [0, 800, 850, 1600, 1650, 2400, 2450],
+              [0, 0, 1, 1, 0, 0, 0],
+            ],
+          },
         });
 
         lax.addElements("#about-us", {
@@ -694,24 +226,24 @@
         lax.addElements("#about-us-1", {
           scrollY: {
             translateY: [
-              ["elInY", "elCenterY"],
-              ["screenHeight", 0],
+              ["elInY", "elCenterY-200"],
+              ["screenWidth/2", 0],
             ],
           },
         });
         lax.addElements("#about-us-2", {
           scrollY: {
             translateY: [
-              ["elInY", "elCenterY"],
-              ["screenHeight", 0],
+              ["elInY", "elCenterY-200"],
+              ["screenWidth/2", 0],
             ],
           },
         });
         lax.addElements("#about-us-3", {
           scrollY: {
             translateY: [
-              ["elInY", "elCenterY"],
-              ["screenHeight", 0],
+              ["elInY", "elCenterY-200"],
+              ["screenWidth/2", 0],
             ],
           },
         });
@@ -727,24 +259,24 @@
         lax.addElements("#mission-1", {
           scrollY: {
             translateY: [
-              ["elInY", "elCenterY"],
-              ["screenHeight", 0],
+              ["elInY", "elCenterY-200"],
+              ["screenWidth/2", 0],
             ],
           },
         });
         lax.addElements("#mission-2", {
           scrollY: {
             translateY: [
-              ["elInY", "elCenterY"],
-              ["screenHeight", 0],
+              ["elInY", "elCenterY-200"],
+              ["screenWidth/2", 0],
             ],
           },
         });
         lax.addElements("#mission-3", {
           scrollY: {
             translateY: [
-              ["elInY", "elCenterY"],
-              ["screenHeight", 0],
+              ["elInY", "elCenterY-200"],
+              ["screenWidth/2", 0],
             ],
           },
         });
@@ -774,6 +306,274 @@
           },
         });
       };
+    </script>
+
+    <script>
+      var canvas = document.getElementById("canvas"),
+        can_w = parseInt(canvas.getAttribute("width")),
+        can_h = parseInt(canvas.getAttribute("height")),
+        ctx = canvas.getContext("2d");
+
+      // console.log(typeof can_w);
+      var BALL_NUM = 30;
+
+      var ball = {
+          x: 0,
+          y: 0,
+          vx: 0,
+          vy: 0,
+          r: 0,
+          alpha: 1,
+          phase: 0,
+        },
+        ball_color = ['#F52789', '#FAEB2C', '#FF8403', '#1487F9', '#9700CC'],
+        R = 2,
+        balls = [],
+        alpha_f = 0.03,
+        alpha_phase = 0,
+        // Line
+        link_line_width = 0.8,
+        dis_limit = 260,
+        add_mouse_point = true,
+        mouse_in = false,
+        mouse_ball = {
+          x: 0,
+          y: 0,
+          vx: 0,
+          vy: 0,
+          r: 0,
+          type: "mouse",
+        };
+
+      // Random speed
+      function getRandomSpeed(pos) {
+        var min = -1,
+          max = 1;
+        switch (pos) {
+          case "top":
+            return [randomNumFrom(min, max), randomNumFrom(0.1, max)];
+            break;
+          case "right":
+            return [randomNumFrom(min, -0.1), randomNumFrom(min, max)];
+            break;
+          case "bottom":
+            return [randomNumFrom(min, max), randomNumFrom(min, -0.1)];
+            break;
+          case "left":
+            return [randomNumFrom(0.1, max), randomNumFrom(min, max)];
+            break;
+          default:
+            return;
+            break;
+        }
+      }
+      function randomArrayItem(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+      }
+      function randomNumFrom(min, max) {
+        return Math.random() * (max - min) + min;
+      }
+      console.log(randomNumFrom(0, 10));
+      // Random Ball
+      function getRandomBall() {
+        var pos = randomArrayItem(["top", "right", "bottom", "left"]);
+        switch (pos) {
+          case "top":
+            return {
+              x: randomSidePos(can_w),
+              y: -R,
+              vx: getRandomSpeed("top")[0],
+              vy: getRandomSpeed("top")[1],
+              r: R,
+              alpha: 1,
+              phase: randomNumFrom(0, 10),
+            };
+            break;
+          case "right":
+            return {
+              x: can_w + R,
+              y: randomSidePos(can_h),
+              vx: getRandomSpeed("right")[0],
+              vy: getRandomSpeed("right")[1],
+              r: R,
+              alpha: 1,
+              phase: randomNumFrom(0, 10),
+            };
+            break;
+          case "bottom":
+            return {
+              x: randomSidePos(can_w),
+              y: can_h + R,
+              vx: getRandomSpeed("bottom")[0],
+              vy: getRandomSpeed("bottom")[1],
+              r: R,
+              alpha: 1,
+              phase: randomNumFrom(0, 10),
+            };
+            break;
+          case "left":
+            return {
+              x: -R,
+              y: randomSidePos(can_h),
+              vx: getRandomSpeed("left")[0],
+              vy: getRandomSpeed("left")[1],
+              r: R,
+              alpha: 1,
+              phase: randomNumFrom(0, 10),
+            };
+            break;
+        }
+      }
+      function randomSidePos(length) {
+        return Math.ceil(Math.random() * length);
+      }
+
+      // Draw Ball
+      function renderBalls() {
+        Array.prototype.forEach.call(balls, function (b) {
+          if (!b.hasOwnProperty("type")) {
+            ctx.fillStyle = ball_color[Math.floor(Math.random()*ball_color.length)];
+            ctx.beginPath();
+            ctx.arc(b.x, b.y, R, 0, Math.PI * 2, true);
+            ctx.closePath();
+            ctx.fill();
+          }
+        });
+      }
+
+      // Update balls
+      function updateBalls() {
+        var new_balls = [];
+        Array.prototype.forEach.call(balls, function (b) {
+          b.x += b.vx;
+          b.y += b.vy;
+
+          if (b.x > -50 && b.x < can_w + 50 && b.y > -50 && b.y < can_h + 50) {
+            new_balls.push(b);
+          }
+
+          // alpha change
+          b.phase += alpha_f;
+          b.alpha = Math.abs(Math.cos(b.phase));
+          // console.log(b.alpha);
+        });
+
+        balls = new_balls.slice(0);
+      }
+
+      // loop alpha
+      function loopAlphaInf() {}
+
+      // Draw lines
+      function renderLines() {
+        var fraction, alpha;
+        for (var i = 0; i < balls.length; i++) {
+          for (var j = i + 1; j < balls.length; j++) {
+            fraction = getDisOf(balls[i], balls[j]) / dis_limit;
+
+            if (fraction < 1) {
+              alpha = (1 - fraction).toString();
+
+              ctx.strokeStyle = "rgba(150,150,150," + alpha + ")";
+              ctx.lineWidth = link_line_width;
+
+              ctx.beginPath();
+              ctx.moveTo(balls[i].x, balls[i].y);
+              ctx.lineTo(balls[j].x, balls[j].y);
+              ctx.stroke();
+              ctx.closePath();
+            }
+          }
+        }
+      }
+
+      // calculate distance between two points
+      function getDisOf(b1, b2) {
+        var delta_x = Math.abs(b1.x - b2.x),
+          delta_y = Math.abs(b1.y - b2.y);
+
+        return Math.sqrt(delta_x * delta_x + delta_y * delta_y);
+      }
+
+      // add balls if there a little balls
+      function addBallIfy() {
+        if (balls.length < BALL_NUM) {
+          balls.push(getRandomBall());
+        }
+      }
+
+      // Render
+      function render() {
+        ctx.clearRect(0, 0, can_w, can_h);
+
+        renderBalls();
+
+        renderLines();
+
+        updateBalls();
+
+        addBallIfy();
+
+        window.requestAnimationFrame(render);
+      }
+
+      // Init Balls
+      function initBalls(num) {
+        for (var i = 1; i <= num; i++) {
+          balls.push({
+            x: randomSidePos(can_w),
+            y: randomSidePos(can_h),
+            vx: getRandomSpeed("top")[0],
+            vy: getRandomSpeed("top")[1],
+            r: R,
+            alpha: 1,
+            phase: randomNumFrom(0, 10),
+          });
+        }
+      }
+      // Init Canvas
+      function initCanvas() {
+        canvas.setAttribute("width", window.innerWidth);
+        canvas.setAttribute("height", window.innerHeight);
+
+        can_w = parseInt(canvas.getAttribute("width"));
+        can_h = parseInt(canvas.getAttribute("height"));
+      }
+      window.addEventListener("resize", function (e) {
+        console.log("Window Resize...");
+        initCanvas();
+      });
+
+      function goMovie() {
+        initCanvas();
+        initBalls(BALL_NUM);
+        window.requestAnimationFrame(render);
+      }
+      goMovie();
+
+      // Mouse effect
+      canvas.addEventListener("mouseenter", function () {
+        console.log("mouseenter");
+        mouse_in = true;
+        balls.push(mouse_ball);
+      });
+      canvas.addEventListener("mouseleave", function () {
+        console.log("mouseleave");
+        mouse_in = false;
+        var new_balls = [];
+        Array.prototype.forEach.call(balls, function (b) {
+          if (!b.hasOwnProperty("type")) {
+            new_balls.push(b);
+          }
+        });
+        balls = new_balls.slice(0);
+      });
+      canvas.addEventListener("mousemove", function (e) {
+        var e = e || window.event;
+        mouse_ball.x = e.pageX;
+        mouse_ball.y = e.pageY;
+        // console.log(mouse_ball);
+      });
     </script>
   </body>
 </html>
